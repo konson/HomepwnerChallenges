@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		51E93EED1D90569800B3F826 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E93EEC1D90569800B3F826 /* AppDelegate.swift */; };
-		51E93EEF1D90569800B3F826 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E93EEE1D90569800B3F826 /* ViewController.swift */; };
 		51E93EF21D90569800B3F826 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51E93EF01D90569800B3F826 /* Main.storyboard */; };
 		51E93EF41D90569800B3F826 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51E93EF31D90569800B3F826 /* Assets.xcassets */; };
 		51E93EF71D90569800B3F826 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51E93EF51D90569800B3F826 /* LaunchScreen.storyboard */; };
 		51E93EFF1D905B2C00B3F826 /* ItemsViewConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E93EFE1D905B2C00B3F826 /* ItemsViewConroller.swift */; };
+		51E93F011D905C9300B3F826 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51E93F001D905C9300B3F826 /* Item.swift */; };
+		51FC21081D9312D400147749 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51FC21071D9312D400147749 /* ItemStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		51E93EE91D90569700B3F826 /* Homepwner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homepwner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51E93EEC1D90569800B3F826 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		51E93EEE1D90569800B3F826 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		51E93EF11D90569800B3F826 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		51E93EF31D90569800B3F826 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51E93EF61D90569800B3F826 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51E93EF81D90569800B3F826 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51E93EFE1D905B2C00B3F826 /* ItemsViewConroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ItemsViewConroller.swift; path = Homepwner/ItemsViewConroller.swift; sourceTree = "<group>"; };
+		51E93F001D905C9300B3F826 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Item.swift; path = Homepwner/Item.swift; sourceTree = "<group>"; };
+		51FC21071D9312D400147749 /* ItemStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,8 @@
 		51E93EE01D90569700B3F826 = {
 			isa = PBXGroup;
 			children = (
+				51E93F001D905C9300B3F826 /* Item.swift */,
+				51FC21071D9312D400147749 /* ItemStore.swift */,
 				51E93EFE1D905B2C00B3F826 /* ItemsViewConroller.swift */,
 				51E93EEB1D90569700B3F826 /* Homepwner */,
 				51E93EEA1D90569700B3F826 /* Products */,
@@ -58,7 +62,6 @@
 			isa = PBXGroup;
 			children = (
 				51E93EEC1D90569800B3F826 /* AppDelegate.swift */,
-				51E93EEE1D90569800B3F826 /* ViewController.swift */,
 				51E93EF01D90569800B3F826 /* Main.storyboard */,
 				51E93EF31D90569800B3F826 /* Assets.xcassets */,
 				51E93EF51D90569800B3F826 /* LaunchScreen.storyboard */,
@@ -139,8 +142,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				51E93EEF1D90569800B3F826 /* ViewController.swift in Sources */,
 				51E93EFF1D905B2C00B3F826 /* ItemsViewConroller.swift in Sources */,
+				51E93F011D905C9300B3F826 /* Item.swift in Sources */,
+				51FC21081D9312D400147749 /* ItemStore.swift in Sources */,
 				51E93EED1D90569800B3F826 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +305,7 @@
 				51E93EFD1D90569800B3F826 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
