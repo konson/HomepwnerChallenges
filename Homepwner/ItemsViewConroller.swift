@@ -17,11 +17,15 @@ class ItemsViewController: UITableViewController {
         let statusBarHeight = UIApplication.shared.statusBarFrame.height
         
         let insets = UIEdgeInsetsMake(statusBarHeight, 0, 0, 0)
+        
         tableView.contentInset = insets
         tableView.scrollIndicatorInsets = insets
+        
     }
     
-    // using dependency injection through a property to give this controller a store
+    // Using dependency injection through a property to give this controller a store
+    // Upon app launch, AppleDelegate.swift fires didFinishLaunchingWithOptions and there it instantiates 
+    // this itemStore, copulating it with teh itemStore array.
     var itemStore: ItemStore!
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -30,6 +34,7 @@ class ItemsViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        // Get a new or recycled cell
         let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
         
         // Set the text on the cell with the description of the item
