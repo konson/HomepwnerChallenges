@@ -16,6 +16,8 @@ class ItemStore { // no need to inherit from NSObject
         for _ in 0..<5 {
             createItem()
         }
+        
+        allItems.append(Item(name: "No More Items!", serialNumber: "", valueInDollars: 100000))
     }
     
     func createItem() -> Item {
